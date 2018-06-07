@@ -18,7 +18,6 @@ class School
   end
   
   def sort
-    @roster = Hash[@roster.sort_by {|grade, students| grade}]
     @roster.each do |grade, students|
       students.sort!
     end
